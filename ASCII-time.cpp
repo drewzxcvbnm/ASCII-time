@@ -5,7 +5,8 @@ using namespace std;
 
 void print(char t1[])
 {
-	cout<<string(750,'\b');
+	cout<<string(1000,'\b');
+	cout<<"\n";
 	int digit;
 	static const char num[11][21]={"### # # # # # # ### "," #  ##   #   #  ### ","###   # ### #   ### ","###   #  ##   # ### ",\
 	"# # # # ###   #   # ","### #   ###   # ### ","### #   ### # # ### ","###   #  ##   #   # ",\
@@ -28,7 +29,6 @@ void print(char t1[])
 
 int main()
 {
-	cout<<"\n\n\n\n\n\n";
 	char t1[128],t2[128];
 	time_t tm;
 	struct tm *timeinfo;
