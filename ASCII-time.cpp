@@ -47,7 +47,11 @@ int main()
 			struct timespec tm;tm.tv_sec=1;
 			nanosleep(&tm,NULL);
 		}
-		
+		#ifdef __linux__ 
+		system("clear");
+		#else
+		system("cls");
+		#endif
 	}
 	return 0;
 }
